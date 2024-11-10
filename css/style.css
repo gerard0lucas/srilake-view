@@ -419,13 +419,13 @@ button:focus {
 
 .ast_header_bottom.style_2 {
     background-color: rgba(0, 0, 0, 0);
-    margin-top: 21px;
+    margin-top: 0px;
     padding: 0px 50px;
 }
 
 .ast_logo {
     float: left;
-    width: 20%;
+    width: 25%;
     padding: 16px 0px;
 }
 
@@ -1596,6 +1596,7 @@ button:focus {
         justify-content: space-between;
         align-items: center;
     }
+
 }
 
 .ast_packages_mainbox .row {
@@ -4217,9 +4218,15 @@ button:focus {
     .ast_header_bottom.style_2 {
         padding: 0px 20px;
     }
+    .ast_logo {
+        width: 50px;
+    }
 }
 
 @media (max-width:991px) {
+    .container{
+        width: 80%;
+    }
     .ast_menu_btn {
         display: block;
         float: none;
@@ -4377,11 +4384,15 @@ button:focus {
         width: auto;
         display: inline-block;
     }
-    .ast_header_bottom {
+    /* .ast_header_bottom {
         margin-top: 100px;
-    }
+    } */
+     .container{
+        width: 90%;
+     }
     .ast_logo {
         padding: 10px 0px;
+        width: 50px;
     }
     /* .ast_menu_btn{
     display: block;
@@ -4644,9 +4655,9 @@ button:focus {
 }
 
 @media (max-width: 380px) {
-    .ast_header_bottom {
+    /* .ast_header_bottom {
         margin-top: 110px;
-    }
+    } */
 }
 
 @media (max-width: 320px) {
@@ -6298,7 +6309,5 @@ li.ast_cart {
     .woocommerce_billing .next {
         margin-top: 30px;
     }
-    .ast_header_bottom {
-        margin-top: 130px;
-    }
+  
 }
