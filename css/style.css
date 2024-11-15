@@ -1596,6 +1596,11 @@ button:focus {
         justify-content: space-between;
         align-items: center;
     }
+    .ast_logo {
+        float: left;
+        width: 120px;
+        padding: 16px 0px;
+    }
 
 }
 
@@ -4228,6 +4233,11 @@ button:focus {
     .container{
         width: 80%;
     }
+    .ast_logo {
+        float: left;
+        width: 140px;
+        padding: 16px 0px;
+    }
     .ast_menu_btn {
         display: block;
         float: none;
@@ -4391,10 +4401,7 @@ button:focus {
      .container{
         width: 90%;
      }
-    .ast_logo {
-        padding: 10px 0px;
-        width: 50px;
-    }
+   
     /* .ast_menu_btn{
     display: block;
     float: none;
@@ -4575,6 +4582,11 @@ button:focus {
 }
 
 @media (max-width: 479px) {
+    .ast_logo {
+        float: left;
+        width: 100px;
+        padding: 16px 0px;
+    }
     .ast_comment_text {
         width: 100%;
         margin-top: 15px;
