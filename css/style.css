@@ -4584,7 +4584,7 @@ button:focus {
 @media (max-width: 479px) {
     .ast_logo {
         float: left;
-        width: 100px;
+        width: 120px;
         padding: 16px 0px;
     }
     .ast_comment_text {
