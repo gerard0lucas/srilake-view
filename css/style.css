@@ -425,7 +425,7 @@ button:focus {
 
 .ast_logo {
     float: left;
-    width: 25%;
+    width: 70%;
     padding: 16px 0px;
 }
 
@@ -2233,6 +2233,7 @@ button:focus {
 .ast_footer_info img {
     display: inline-block;
     margin-bottom: 15px;
+    width: 200px;
 }
 
 .ast_footer_info p {

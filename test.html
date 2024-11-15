@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomorrow's Horoscope for Leo</title>
+</head>
+<body>
+    <h1>Tomorrow's Horoscope for Leo</h1>
+    <p><strong>Date:</strong> <span id="date"></span></p>
+    <p><strong>Horoscope:</strong></p>
+    <p id="horoscope"></p>
+
+    <script>
+        fetch('https://api.allorigins.win/get?url=' + encodeURIComponent('https://horoscope-app-api.vercel.app/api/v1/get-horoscope/daily?sign=Pisces&day=TODAY'))
+            .then(response => response.json())
+            .then(data => {
+                const horoscopeData = JSON.parse(data.contents).data;
+                document.getElementById('date').textContent = horoscopeData.date;
+                document.getElementById('horoscope').textContent = horoscopeData.horoscope_data;
+                console.log("Date:", horoscopeData.date);
+                console.log("Horoscope:", horoscopeData.horoscope_data);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html>
